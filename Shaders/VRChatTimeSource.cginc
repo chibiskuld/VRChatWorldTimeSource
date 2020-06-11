@@ -13,15 +13,21 @@ float3 GetTime() {
 	if ( _VRChat_EnterWorldTime_TexelSize.z != 0 ) {
 		float4 enterTime = tex2D(_VRChat_EnterWorldTime, float2(.5f, .5f));
 		if (enterTime.a == 1) {
+#if UNITY_COLORSPACE_GAMMA
+			enterTime.rgb = enterTime.rgb;
+#else
 			enterTime.rgb = LinearToGammaSpace(enterTime.rgb);
-			enterTime.r *= 24.0f;
-			enterTime.g *= 60.0f;
-			enterTime.b *= 60.0f;
-			time += enterTime.r*3600.0f + enterTime.g * 60.0f + enterTime.b;
+#endif
+			int h = round(enterTime.r * 24.0f);
+			int m = round(enterTime.g * 60.0f);
+			int s = round(enterTime.b * 60.0f);
+			time += h * 3600;
+			time += m * 60;
+			time += s;
 		}
 	}
-	retVal.r = (time / 3600) % 24;
-	retVal.g = (time / 60) % 60;
-	retVal.b = time % 60;
+	retVal.r = (time / 3600.0f) % 24.0f;
+	retVal.g = (time / 60.0f) % 60.0f;
+	retVal.b = time % 60.0f;
 	return retVal;
 }

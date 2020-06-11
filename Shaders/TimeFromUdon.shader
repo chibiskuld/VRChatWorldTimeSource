@@ -1,8 +1,10 @@
-﻿Shader "Skuld/Time As Color"
+﻿Shader "Skuld/Time From Udon"
 {
-    Properties
-    {
-		_SystemTime("Time in Seconds", float) = 0
+	Properties
+	{
+		_Hour("Hour",float) = 0
+		_Minute("Minute", float) = 0
+		_Second("Second", float) = 0
     }
     SubShader
     {
@@ -29,7 +31,9 @@
                 float4 vertex : SV_POSITION;
             };
 
-			float _SystemTime;
+			float _Hour;
+			float _Minute;
+			float _Second;
 
             v2f vert (appdata v)
             {
@@ -41,10 +45,13 @@
             fixed4 frag (v2f i) : SV_Target
             {
 				fixed4 col;
-				col.r = ( (_SystemTime / 3600) % 24 ) / 24;
-				col.g = ( (_SystemTime / 60) % 60 ) / 60;
-				col.b = ( _SystemTime % 60 ) / 60;
-                
+				col.r = _Hour / 24.0f;
+				col.g = _Minute / 60.0f;
+				col.b = _Second / 60.0f;
+				col.a = 1;
+#ifndef UNITY_COLORSPACE_GAMMA
+				col.rgb = GammaToLinearSpace(col.rgb);
+#endif
                 return col;
             }
             ENDCG
