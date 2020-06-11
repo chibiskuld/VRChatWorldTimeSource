@@ -46,4 +46,4 @@ time.z //The current Second supplied as 0-60
 Supplied in the folder `/Assets/VRChatWorldTimeSource/Prefabs` is `clock` Drag and drop that into the scene, and feel free to tear that apart to figure out what I've done. Usage of `VRChatTimeSource.cginc` can be found in the shader `/Assets/VRChatWorldTimeSource/Shaders/Toon/Toon.clock.cginc`.
 
 ## Credits
-I pieced together all of this, but the idea comes from [UdonSharp](https://github.com/Merlin-san). The bridge that connects all of this is made possible by a trick discovered by [Scruff](https://github.com/ScruffyRules/_VRChat_VideoPlayer)z
+I pieced together all of this, but the idea comes from [Merlin](https://github.com/Merlin-san). The bridge that connects all of this is made possible by a trick discovered by [Scruff](https://github.com/ScruffyRules/_VRChat_VideoPlayer)
