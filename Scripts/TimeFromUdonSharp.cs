@@ -1,4 +1,4 @@
-
+#if VRC_SDK_VRCSDK3
 using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
@@ -14,3 +14,4 @@ public class TimeFromUdonSharp : UdonSharpBehaviour
         timePanel.material.SetFloat("_Second", System.DateTime.Now.Second);
     }
 }
+#endif
