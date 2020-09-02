@@ -1,4 +1,4 @@
-﻿Shader "Skuld/Toon Clock"
+﻿Shader "Skuld/Time Source/Toon Clock"
 {
 	Properties {
 		[space]

@@ -1,4 +1,4 @@
-﻿Shader "Skuld/Toon Opaque"
+﻿Shader "Skuld/Time Source/Toon Opaque"
 {
 	Properties {
 		[space]
