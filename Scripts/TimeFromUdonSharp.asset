@@ -73,150 +73,150 @@ MonoBehaviour:
     - startInstruction: 0
       endInstruction: -1
       startSourceChar: 0
-      endSourceChar: 2
+      endSourceChar: 0
       line: 0
-      lineChar: 0
-      spanCodeSection: "\r\n"
-    - startInstruction: 0
-      endInstruction: -1
-      startSourceChar: 2
-      endSourceChar: 2
-      line: 1
       lineChar: 0
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 2
-      endSourceChar: 8
-      line: 1
+      startSourceChar: 0
+      endSourceChar: 0
+      line: 0
+      lineChar: 0
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 0
+      endSourceChar: 6
+      line: 0
       lineChar: 0
       spanCodeSection: 'using '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 8
-      endSourceChar: 20
-      line: 1
+      startSourceChar: 6
+      endSourceChar: 18
+      line: 0
       lineChar: 6
       spanCodeSection: "UdonSharp;\r\n"
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 20
-      endSourceChar: 26
-      line: 2
+      startSourceChar: 18
+      endSourceChar: 24
+      line: 1
       lineChar: 0
       spanCodeSection: 'using '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 26
-      endSourceChar: 40
-      line: 2
+      startSourceChar: 24
+      endSourceChar: 38
+      line: 1
       lineChar: 6
       spanCodeSection: "UnityEngine;\r\n"
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 40
-      endSourceChar: 46
-      line: 3
+      startSourceChar: 38
+      endSourceChar: 44
+      line: 2
       lineChar: 0
       spanCodeSection: 'using '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 46
-      endSourceChar: 46
-      line: 3
+      startSourceChar: 44
+      endSourceChar: 44
+      line: 2
       lineChar: 6
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 46
-      endSourceChar: 50
-      line: 3
+      startSourceChar: 44
+      endSourceChar: 48
+      line: 2
       lineChar: 6
       spanCodeSection: VRC.
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 50
-      endSourceChar: 60
-      line: 3
+      startSourceChar: 48
+      endSourceChar: 58
+      line: 2
       lineChar: 10
       spanCodeSection: "SDKBase;\r\n"
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 60
-      endSourceChar: 66
-      line: 4
+      startSourceChar: 58
+      endSourceChar: 64
+      line: 3
       lineChar: 0
       spanCodeSection: 'using '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 66
-      endSourceChar: 66
-      line: 4
+      startSourceChar: 64
+      endSourceChar: 64
+      line: 3
       lineChar: 6
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 66
-      endSourceChar: 70
-      line: 4
+      startSourceChar: 64
+      endSourceChar: 68
+      line: 3
       lineChar: 6
       spanCodeSection: VRC.
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 70
-      endSourceChar: 79
-      line: 4
+      startSourceChar: 68
+      endSourceChar: 77
+      line: 3
       lineChar: 10
       spanCodeSection: "Udon;\r\n\r\n"
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 79
-      endSourceChar: 110
-      line: 6
+      startSourceChar: 77
+      endSourceChar: 108
+      line: 5
       lineChar: 0
       spanCodeSection: 'public class TimeFromUdonSharp '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 110
-      endSourceChar: 112
-      line: 6
+      startSourceChar: 108
+      endSourceChar: 110
+      line: 5
       lineChar: 31
       spanCodeSection: ': '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 112
-      endSourceChar: 112
-      line: 6
+      startSourceChar: 110
+      endSourceChar: 110
+      line: 5
       lineChar: 33
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 112
-      endSourceChar: 139
-      line: 6
+      startSourceChar: 110
+      endSourceChar: 137
+      line: 5
       lineChar: 33
       spanCodeSection: "UdonSharpBehaviour\r\n{\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 139
-      endSourceChar: 146
-      line: 8
+      startSourceChar: 137
+      endSourceChar: 144
+      line: 7
       lineChar: 4
       spanCodeSection: 'public '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 146
-      endSourceChar: 146
-      line: 8
+      startSourceChar: 144
+      endSourceChar: 144
+      line: 7
       lineChar: 11
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 146
+      startSourceChar: 144
       endSourceChar: 175
-      line: 8
+      line: 7
       lineChar: 11
-      spanCodeSection: "MeshRenderer timePanel;\r\n    "
+      spanCodeSection: "MeshRenderer timePanel;\r\n\r\n    "
     - startInstruction: 0
       endInstruction: 7
       startSourceChar: 175

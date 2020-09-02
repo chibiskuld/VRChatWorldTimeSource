@@ -16,14 +16,14 @@ VRChat SDK2.
 VRChat SDK3, Udon, & [UdonSharp](https://github.com/Merlin-san/UdonSharp)
 
 ## How to Use
-### Downlod the package for the appropriate SDK
-SDK2:
-https://github.com/chibiskuld/VRChatWorldTimeSource/releases/download/0.9/VRChatWorldTimeSourceSDK2.unitypackage
-SDK3: 
-https://github.com/chibiskuld/VRChatWorldTimeSource/releases/download/0.9/VRChatWorldTimeSourceSDK3.unitypackage
+### Download the package for the appropriate SDK
+SDK2:  
+https://github.com/chibiskuld/VRChatWorldTimeSource/releases/download/0.9/VRChatWorldTimeSourceSDK2.unitypackage  
+SDK3:  
+https://github.com/chibiskuld/VRChatWorldTimeSource/releases/download/0.9/VRChatWorldTimeSourceSDK3.unitypackage  
 
 ### Setup your world
-In the folder `/Assets/VRChatWorldTimeSource/Prefabs` you will find the TimeSource prefab to add to your world. Drag this into your Hierchy, and tuck it away in your scene some place it won't be seen. (It is masked by layer, but you never know)
+In the folder `/Assets/VRChatWorldTimeSource/Prefabs` you will find the TimeSource prefab to add to your world. Drag this into your Hierarchy, and tuck it away in your scene some place it won't be seen. (It is masked by layer, but you never know)
 
 ### Using the .cginc
 In the folder `/Assets/VRChatWorldTimeSource/Shaders` is the file `VRChatTimeSource.cginc`, you should copy this to the folder with your shader. To include just simply:  
