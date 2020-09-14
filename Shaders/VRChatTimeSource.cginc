@@ -34,7 +34,7 @@ float3 GetTime() {
 	//attempt to get time from time encoded light.
 	for (int i = 0; i < 4; i++)
 	{
-		if (unity_LightColor[i].w == 795138)
+		if (unity_LightColor[i].w == 795)
 		{
 			float4 p;
 			int h = round(unity_4LightPosX0[i]);
