@@ -9,8 +9,6 @@ public class TimeFromUdonSharp : UdonSharpBehaviour
 
     void Start()
     {
-        timePanel.material.SetFloat("_Hour", System.DateTime.Now.Hour);
-        timePanel.material.SetFloat("_Minute", System.DateTime.Now.Minute);
-        timePanel.material.SetFloat("_Second", System.DateTime.Now.Second);
+        transform.position = new Vector3(System.DateTime.Now.Hour, System.DateTime.Now.Minute, System.DateTime.Now.Second);
     }
 }
