@@ -1,3 +1,4 @@
+
 sampler2D _HandTex;
 float _HandWidth;
 float4 _HandColor;
@@ -67,8 +68,6 @@ fixed4 frag_clock( PIO process, uint isFrontFace : SV_IsFrontFace ) : SV_Target
 	color = DrawMinute(color, process, time.g);
 	color = DrawHour(color, process, time.r);
 
-	//Apply baselights
-	color = applyLight(process, color);
 	color.a = 1;
 	return color;
 }
