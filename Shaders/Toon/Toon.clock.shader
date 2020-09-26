@@ -41,32 +41,7 @@
 			#pragma target 3.5
 			#pragma vertex vert
 			#pragma fragment frag_clock
-			#pragma multi_compile
-
-			#define MODE_OPAQUE
-
-			#include "Toon.Globals.cginc"
-			#include "../VRChatTimeSource.cginc"
-			#include "Toon.clock.cginc"
-
-			ENDCG
-		}
-		Pass {
-			Tags { "LightMode" = "ForwardAdd"}
-			Blend One One
-
-			CGPROGRAM
-			#include "UnityCG.cginc"
-			#include "UnityLightingCommon.cginc"
-			#include "AutoLight.cginc"
-			#include "UnityPBSLighting.cginc"
-			
-			#pragma target 5.0
-			#define FORWARD_ADD
-			#pragma vertex vert
-			#pragma fragment frag_clock
-			
-			#pragma multi_compile_fwdadd_fullshadows
+			#pragma multi_compile _ VERTEXLIGHT_ON
 
 			#define MODE_OPAQUE
 
