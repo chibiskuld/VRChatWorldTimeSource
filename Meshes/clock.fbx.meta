@@ -15,12 +15,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Base
-    second: {fileID: 2100000, guid: 6f770146883bf19448473bf9c6981c74, type: 2}
+    second: {fileID: 2100000, guid: 2bcf2ba0e7b4f7c47bfc72199229fe5f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Clock
-    second: {fileID: 2100000, guid: 8ea660f925baa0945bb6f7e23f622eb6, type: 2}
+    second: {fileID: 2100000, guid: 8aaa1a49299e62d47adf3a068a0a3591, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -46,7 +46,8 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    extraUserProperties: []
+    extraUserProperties:
+    - '#BAKERY{"meshName":["Clock"],"padding":[9],"unwrapper":[0]}'
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -60,7 +61,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
