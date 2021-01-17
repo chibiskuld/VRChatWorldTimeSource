@@ -6,6 +6,7 @@ float4 _HandOffset;
 float tor;
 float _MinuteHandSize;
 float _HourHandSize;
+float4 _FeedTime;
 
 float2 rotate2(float2 inCoords, float rot)
 {
@@ -62,7 +63,7 @@ fixed4 frag_clock( PIO process, uint isFrontFace : SV_IsFrontFace ) : SV_Target
 
 	process = adjustProcess(process, isFrontFace);
 
-	float3 time = GetTime();
+	float3 time = GetTime(_FeedTime);
 
 	color = DrawSeconds(color, process, time.b);
 	color = DrawMinute(color, process, time.g);

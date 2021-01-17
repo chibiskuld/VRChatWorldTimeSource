@@ -21,6 +21,7 @@
 		_HandOffset("Hand Offset",Vector) = (0,0,0,0)
 		_MinuteHandSize("Minute Hand Size",Float) = .5
 		_HourHandSize("Hour Hand Size",Float) = .5
+		_FeedTime("Time Feed",Vector) = (0,0,0,0)
 	}
 
 	SubShader {

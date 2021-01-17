@@ -14,7 +14,7 @@ float3 GetTime() {
 	float time = _Time.y;
 
 	//attempt to get time from global render texture.
-	if ( _VRChat_EnterWorldTime_TexelSize.z != 0 ) {
+	if (_VRChat_EnterWorldTime_TexelSize.z != 0) {
 		float4 enterTime = tex2D(_VRChat_EnterWorldTime, float2(.5f, .5f));
 		if (enterTime.a == 1) {
 #if UNITY_COLORSPACE_GAMMA
@@ -30,7 +30,7 @@ float3 GetTime() {
 			time += s;
 		}
 	}
-	
+
 	//attempt to get time from time encoded light.
 	for (int i = 0; i < 4; i++)
 	{
@@ -46,6 +46,26 @@ float3 GetTime() {
 			break;
 		}
 	}
+
+	retVal.r = (time / 3600.0f) % 24.0f;
+	retVal.g = (time / 60.0f) % 60.0f;
+	retVal.b = time % 60.0f;
+	return retVal;
+}
+
+float3 GetTime(float4 offset) {
+	float3 retVal;
+
+	//default to time being time since world load.
+	float time = _Time.y;
+
+	float4 p;
+	int h = round(offset.x);
+	int m = round(offset.y);
+	int s = round(offset.z);
+	time += h * 3600;
+	time += m * 60;
+	time += s;
 
 	retVal.r = (time / 3600.0f) % 24.0f;
 	retVal.g = (time / 60.0f) % 60.0f;
