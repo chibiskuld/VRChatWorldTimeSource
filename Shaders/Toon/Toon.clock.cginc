@@ -67,16 +67,8 @@ fixed4 frag_clock( PIO process, uint isFrontFace : SV_IsFrontFace ) : SV_Target
 	color = DrawMinute(color, process, time.g);
 	color = DrawHour(color, process, time.r);
 
-
-#ifndef FORWARD_ADD
 	//Apply baselights
 	color = applyLight(process, color);
-#else 
-	float3 lightDirection = -normalize(UnityWorldSpaceLightDir(process.worldPosition));
-	float brightness = dot(lightDirection, process.worldNormal);// * unity_4LightAtten0;
-	brightness = applyToonEdge(process, brightness);
-	color.rgb = max(color.rgb * _LightColor0.rgb * brightness, 0);
-#endif
 	color.a = 1;
 	return color;
 }

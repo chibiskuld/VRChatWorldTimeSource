@@ -89,7 +89,7 @@ float applyToonEdge( PIO process, float brightness){
 #ifndef FOWARDBASE
 	UNITY_LIGHT_ATTENUATION(attenuation,process,process.worldPosition);
 #else
-	attenuation = 1
+	float attenuation = 1;
 #endif
 	
 	//apply faux ramp:

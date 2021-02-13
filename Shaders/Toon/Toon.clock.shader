@@ -44,6 +44,7 @@
 			#pragma multi_compile
 
 			#define MODE_OPAQUE
+			#define FOWARDBASE
 
 			#include "Toon.Globals.cginc"
 			#include "../VRChatTimeSource.cginc"
