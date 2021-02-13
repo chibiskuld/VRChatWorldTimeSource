@@ -1,5 +1,5 @@
 # VRChat World Time Source Package
-This package contains prefabs that allows you to add a time source to your VRChat world, as well as a means of accessing that time source from your avatars custom shaders. The time source prefab is first placed into your world. Then it allows for you to access the current time through a shader on your avatar. If you are within a world with the timesource prefab, then the shader will be supplied with the current system time. If a time source is not available, the time you have been in the world will be supplied instead. There are two variants of the packages. One for SDK2, and one for SDK3. The SDK2 package retrieves time from this:  
+This package contains prefabs that allow you to add a time source to your VRChat world, as well as a means of accessing that time source from your avatars custom shaders. The time source prefab is first placed into your world. Then it allows for you to access the current time through a shader on your avatar. If you are within a world with the timesource prefab, then the shader will be supplied with the current system time. If a time source is not available, the time you have been in the world will be supplied instead. There are two variants of the packages. One for SDK2, and one for SDK3. The SDK2 package retrieves time from this:  
 https://www.studiojaw.com/time/  
 While the SDK3 package retrieves the time from your local system time, utilizing UdonSharp.
 
@@ -17,10 +17,10 @@ VRChat SDK3, Udon, & [UdonSharp](https://github.com/Merlin-san/UdonSharp)
 
 ## How to Use
 ### Download the package for the appropriate SDK
-SDK2:
-https://github.com/chibiskuld/VRChatWorldTimeSource/releases/download/0.9/VRChatWorldTimeSourceSDK2.unitypackage
-SDK3: 
-https://github.com/chibiskuld/VRChatWorldTimeSource/releases/download/0.9/VRChatWorldTimeSourceSDK3.unitypackage
+SDK2:  
+https://github.com/chibiskuld/VRChatWorldTimeSource/releases/download/0.9/VRChatWorldTimeSourceSDK2.unitypackage  
+SDK3:  
+https://github.com/chibiskuld/VRChatWorldTimeSource/releases/download/0.9/VRChatWorldTimeSourceSDK3.unitypackage  
 
 ### Setup your world
 In the folder `/Assets/VRChatWorldTimeSource/Prefabs` you will find the TimeSource prefab to add to your world. Drag this into your Hierarchy, and tuck it away in your scene some place it won't be seen. (It is masked by layer, but you never know)

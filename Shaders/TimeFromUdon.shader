@@ -1,4 +1,4 @@
-﻿Shader "Skuld/Time From Udon"
+﻿Shader "Skuld/Time Source/Time From Udon"
 {
 	Properties
 	{
